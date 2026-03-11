@@ -4,11 +4,20 @@ import random
 
 #funktionen
 def zufalls_zahl():
-    dice = ["1","2","3","4","5","6"]                     #Würfel auf english
+     dice = random.randint(1,6)          #randint spare ich mir die liste
+     return dice                               #dice = würfel auf englisch
 
-    dice = random.choice(dice)
-    return dice
 
-dice = zufalls_zahl()
+while True:
 
-print("Würfel Zahl betragt:",dice)
+    dice = zufalls_zahl()
+
+    print("Würfel Zahl betragt:",dice)
+
+    weiter = input("Nochmal Würfeln? (y/n):")
+
+    if weiter == "y":
+        continue
+
+    else:
+        break
