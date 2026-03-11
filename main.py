@@ -10,9 +10,14 @@ def zufalls_zahl():
 
 while True:
 
-    dice = zufalls_zahl()
+    dice1 = zufalls_zahl()
+    dice2 = zufalls_zahl()
 
-    print("Würfel Zahl betragt:",dice)
+    print("Würfel 1 hat:",dice1, "gewürfelt")
+    print("Würfel 2 hat:",dice2, "gewürfelt")
+
+    gesamt=dice1 + dice2
+    print("Gesamt würde:",gesamt,"gewürfelt")
 
     weiter = input("Nochmal Würfeln? (y/n):")
 
