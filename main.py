@@ -23,7 +23,7 @@ dice3_bild = """
 +-----+
 | o   |
 |  o  | 
-|  o  |
+|   o |
 +-----+
 """
 
@@ -101,7 +101,7 @@ while True:
     zeilen1 = bild_dice1.splitlines()       #splitlines teilt das Würfelbild in einzele zeilen
     zeilen2 = bild_dice2.splitlines()
 
-    for i in range(6):                      #5 da es die 5 Würfel zeilen runterlaufen soll
+    for i in range(6):                      #5 da es die  6 Würfel zeilen runterlaufen soll
         print(zeilen1[i]," ",zeilen2[i])    #i wählt die zeile des würfelbildes
 
     weiter = input("Nochmal Würfeln? (y/n):")
