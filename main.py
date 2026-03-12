@@ -2,8 +2,8 @@
 
 import random
 
-
-dice1_bild =  """
+#""" erlaubt Text mit mehreren Zeilen
+dice1_bild =  """            
 +-----+
 |     |
 |  o  |
@@ -72,31 +72,37 @@ while True:
 
     match dice1:
         case 1 :
-            print(dice1_bild)
+            bild_dice1 = dice1_bild
         case 2:
-            print(dice2_bild)
+            bild_dice1 = dice2_bild
         case 3:
-            print(dice3_bild)
+            bild_dice1 = dice3_bild
         case 4 :
-            print(dice4_bild)
+            bild_dice1 = dice4_bild
         case 5:
-            print(dice5_bild)
+            bild_dice1 = dice5_bild
         case 6:
-            print(dice6_bild)
+            bild_dice1 = dice6_bild
 
     match dice2:
         case 1 :
-            print(dice1_bild)
+            bild_dice2 = dice1_bild
         case 2:
-            print(dice2_bild)
+            bild_dice2 = dice2_bild
         case 3:
-            print(dice3_bild)
+            bild_dice2 = dice3_bild
         case 4 :
-            print(dice4_bild)
+            bild_dice2 = dice4_bild
         case 5:
-            print(dice5_bild)
+            bild_dice2 = dice5_bild
         case 6:
-            print(dice6_bild)
+            bild_dice2 = dice6_bild
+
+    zeilen1 = bild_dice1.splitlines()       #splitlines teilt das Würfelbild in einzele zeilen
+    zeilen2 = bild_dice2.splitlines()
+
+    for i in range(6):                      #5 da es die 5 Würfel zeilen runterlaufen soll
+        print(zeilen1[i]," ",zeilen2[i])    #i wählt die zeile des würfelbildes
 
     weiter = input("Nochmal Würfeln? (y/n):")
 
