@@ -67,9 +67,8 @@ while True:
     gesamt=dice1 + dice2
     print("Gesamt würde:",gesamt,"gewürfelt")
 
-#Würfel anzeigen
-    print("Würfel 1")
 
+#Würfel anzeigen
     match dice1:
         case 1 :
             bild_dice1 = dice1_bild
