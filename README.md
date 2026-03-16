@@ -1,6 +1,6 @@
 # Würfel Simulator 
 
-Ein einfaches Python Programm das einen Würfel simuliert.Die Würfel werden als ASCII-Bild dargestellt.
+Ein Python Programm das einen Würfel simuliert.Die Würfel werden als ASCII-Bild dargestellt.
 
 ## Funktion 
 
